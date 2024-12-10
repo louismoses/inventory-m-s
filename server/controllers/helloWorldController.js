@@ -1,3 +1,3 @@
 exports.helloWorld = async (req, res) => {
-    res.render("hello-world");
+  res.render("hello-world");
 };

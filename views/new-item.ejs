@@ -1,0 +1,40 @@
+<%- include('partials/header.ejs') %>
+<style>
+  .required:after {
+    content: " *";
+    color: red;
+  }
+</style>
+ <div class="container mt-5">
+  <h1>Inventory Management System</h1>
+  <div class="">
+    <h2>New Item</h2>
+    <form action="" method="post">
+      <div class="form-group mb-3 ">
+        <label for="name" class="required">Name</label>
+        <input type="text" class="form-control" id="name" name="name" required>
+      </div>
+      <div class="form-group mb-3 ">
+        <label for="name" class="required">Category</label>
+        <input type="text" class="form-control" id="category" name="category" required>
+      </div>
+      <div class="form-group mb-3">
+        <label for="name">Quantity</label>
+        <input type="text" class="form-control" id="quantity" name="quantity" >
+      </div>
+      <div class="form-group mb-3">
+        <label for="name" class="required">Price</label>
+        <input type="text" class="form-control" id="price" name="price" required>
+      </div>
+      <div class="form-group mb-3">
+        <label for="name">Description</label>
+        <input type="text" class="form-control" id="description" name="description" >
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary">Submit</button>
+      <a href="/items" class="btn btn-secondary">Cancel</a>
+      </div>
+    </form>
+
+ </div>
+<%- include('partials/footer.ejs') %>

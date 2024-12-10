@@ -8,5 +8,11 @@ mongoose
 
 // list of all items
 exports.items = async (req, res) => {
-    res.render("index");
+    const items = await Item.find({});
+    res.render("index", { items });
+};
+
+// add item
+exports.addItemForm = async (req, res) => {
+    res.render("new-item");
 };

@@ -18,5 +18,5 @@ app.use("/", itemRoutes);
 app.use("/hello-world", helloWorldRoutes);
 
 app.listen(port, () => {
-    console.log(`App server is running on port ${port}`);
+  console.log(`App server is running on port ${port}`);
 });
