@@ -11,9 +11,23 @@ The Inventory Management System (IMS) is a backend web application designed to m
 - MongoDB
 - Mongoose
 - EJS
+- PNPM
 
 ## System Architecture
 
 - Model
 - View
 - Controller
+
+## Installation
+
+- clone the repository
+
+```bash
+   git clone https://github.com/louismoses/inventory-m-s.git https://github.com/louismoses/inventory-m-s.git
+
+```
+
+- cd inventory-m-s
+- pnpm install
+- pnpm run dev
