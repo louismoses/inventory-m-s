@@ -30,4 +30,5 @@ The Inventory Management System (IMS) is a backend web application designed to m
 
 - cd inventory-m-s
 - pnpm install
-- pnpm run dev
+- node seeds/seeder.js
+- node index.js
