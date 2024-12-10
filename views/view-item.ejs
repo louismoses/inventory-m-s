@@ -6,23 +6,23 @@
     <form action="/items/create-item" method="post">
       <div class="form-group mb-3 ">
         <label for="name" class="required">Name</label>
-        <input type="text" class="form-control" id="name" name="name" value="<%= item.name %>">
+        <input type="text" class="form-control" id="name" name="name" value="<%= item.name %>" disabled>
       </div>
       <div class="form-group mb-3 ">
         <label for="name" class="required">Category</label>
-        <input type="text" class="form-control" id="category" name="category" value="<%= item.category %>">
+        <input type="text" class="form-control" id="category" name="category" value="<%= item.category %>" disabled>
       </div>
       <div class="form-group mb-3">
         <label for="name">Quantity</label>
-        <input type="text" class="form-control" id="quantity" name="quantity" value="<%= item.quantity %>">
+        <input type="text" class="form-control" id="quantity" name="quantity" value="<%= item.quantity %>" disabled>
       </div>
       <div class="form-group mb-3">
         <label for="name" class="required">Price</label>
-        <input type="text" class="form-control" id="price" name="price" value="<%= item.price %>">
+        <input type="text" class="form-control" id="price" name="price" value="<%= item.price %>" disabled>
       </div>
       <div class="form-group mb-3">
         <label for="name">Description</label>
-        <input type="text" class="form-control" id="description" name="description" value="<%= item.description %>">
+        <input type="text" class="form-control" id="description" name="description" value="<%= item.description %>" disabled>
       </div>
       <div class="form-group">
       <a href="/items" class="btn btn-secondary">Cancel</a>

@@ -1,7 +1,7 @@
 const express = require("express");
 const methodOverride = require("method-override");
 const path = require("path");
-const mongoose = require("mongoose");
+
 const itemRoutes = require("./server/routes/itemRoutes");
 const helloWorldRoutes = require("./server/routes/helloWorldRoutes");
 
@@ -14,9 +14,9 @@ app.set("views", path.join(__dirname, "views"));
 app.use(express.urlencoded({ extended: true }));
 app.use(methodOverride("_method"));
 
-app.use("/", itemRoutes);
+app.use("/items", itemRoutes);
 app.use("/hello-world", helloWorldRoutes);
 
 app.listen(port, () => {
-  console.log(`App server is running on port ${port}`);
+    console.log(`App server is running on port ${port}`);
 });

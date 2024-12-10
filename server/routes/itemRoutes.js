@@ -2,9 +2,12 @@ const express = require("express");
 const router = express.Router();
 const itemController = require("../controllers/itemController");
 
-router.get("/items", itemController.items);
+router.get("/", itemController.items);
 router.get("/new-item", itemController.addItemForm);
-router.post("/items/create-item", itemController.addItem);
-router.get("/items/:id", itemController.viewItem);
+router.post("/create-item", itemController.addItem);
+router.get("/:id", itemController.viewItem);
+router.get("/:id/edit", itemController.editItemForm);
+router.put("/:id", itemController.updateItem);
+router.delete("/:id", itemController.deleteItem);
 
 module.exports = router;
