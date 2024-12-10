@@ -23,3 +23,9 @@ exports.addItem = async (req, res) => {
   await item.save();
   res.redirect("/items");
 };
+
+// view item
+exports.viewItem = async (req, res) => {
+  const item = await Item.findById(req.params.id);
+  res.render("view-item", { item });
+};
