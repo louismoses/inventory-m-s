@@ -1,4 +1,4 @@
-# Project Title: Inventory Management System (IMS)
+# Inventory Management System (IMS)
 
 ## Project Description
 
