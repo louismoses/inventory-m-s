@@ -22,9 +22,10 @@ The Inventory Management System (IMS) is a backend web application designed to m
 ## Installation
 
 - clone the repository
+  git clone
 
 ```bash
-   git clone https://github.com/louismoses/inventory-m-s.git https://github.com/louismoses/inventory-m-s.git
+  git clone  https://github.com/louismoses/inventory-m-s.git
 
 ```
 
